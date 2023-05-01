@@ -14,12 +14,12 @@ namespace CalculatorCaloric
     {
         private ProgressForm _progressForm;
 
-        private Calculator _calculator;
+        private CalculatorDLL.Calculator _calculator;
         private List<Meals> _meals;
         public MainForm()
         {
             InitializeComponent();
-            _calculator = new Calculator("Male", "Active", 65, 180, 25);
+            _calculator = new CalculatorDLL.Calculator("Male", "Active", 65, 180, 25);
             _meals = new List<Meals>();
         }
 

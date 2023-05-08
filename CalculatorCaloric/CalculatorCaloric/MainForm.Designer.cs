@@ -49,10 +49,16 @@
             this.groupBoxCalorieCount = new System.Windows.Forms.GroupBox();
             this.textBoxTargetCalories = new System.Windows.Forms.TextBox();
             this.labelTargetCalories = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.AddDayButon = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBoxResults.SuspendLayout();
             this.groupBoxAddMeal.SuspendLayout();
             this.groupBoxProgress.SuspendLayout();
             this.groupBoxCalorieCount.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // radioButtonLoseWeight
@@ -60,9 +66,10 @@
             this.radioButtonLoseWeight.AutoSize = true;
             this.radioButtonLoseWeight.Checked = true;
             this.radioButtonLoseWeight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonLoseWeight.Location = new System.Drawing.Point(32, 31);
+            this.radioButtonLoseWeight.Location = new System.Drawing.Point(43, 38);
+            this.radioButtonLoseWeight.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonLoseWeight.Name = "radioButtonLoseWeight";
-            this.radioButtonLoseWeight.Size = new System.Drawing.Size(97, 17);
+            this.radioButtonLoseWeight.Size = new System.Drawing.Size(127, 21);
             this.radioButtonLoseWeight.TabIndex = 0;
             this.radioButtonLoseWeight.TabStop = true;
             this.radioButtonLoseWeight.Text = "Pierde greutate";
@@ -72,9 +79,10 @@
             // 
             this.radioButtonGainWeight.AutoSize = true;
             this.radioButtonGainWeight.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonGainWeight.Location = new System.Drawing.Point(142, 31);
+            this.radioButtonGainWeight.Location = new System.Drawing.Point(189, 38);
+            this.radioButtonGainWeight.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonGainWeight.Name = "radioButtonGainWeight";
-            this.radioButtonGainWeight.Size = new System.Drawing.Size(110, 17);
+            this.radioButtonGainWeight.Size = new System.Drawing.Size(142, 21);
             this.radioButtonGainWeight.TabIndex = 1;
             this.radioButtonGainWeight.Text = "Crește în greutate";
             this.radioButtonGainWeight.UseVisualStyleBackColor = true;
@@ -85,18 +93,21 @@
             this.groupBoxResults.Controls.Add(this.textBoxResult);
             this.groupBoxResults.Controls.Add(this.radioButtonGainWeight);
             this.groupBoxResults.Controls.Add(this.radioButtonLoseWeight);
-            this.groupBoxResults.Location = new System.Drawing.Point(20, 25);
+            this.groupBoxResults.Location = new System.Drawing.Point(27, 31);
+            this.groupBoxResults.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxResults.Name = "groupBoxResults";
-            this.groupBoxResults.Size = new System.Drawing.Size(274, 375);
+            this.groupBoxResults.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxResults.Size = new System.Drawing.Size(365, 462);
             this.groupBoxResults.TabIndex = 2;
             this.groupBoxResults.TabStop = false;
             // 
             // buttonCalculate
             // 
             this.buttonCalculate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonCalculate.Location = new System.Drawing.Point(66, 87);
+            this.buttonCalculate.Location = new System.Drawing.Point(88, 107);
+            this.buttonCalculate.Margin = new System.Windows.Forms.Padding(4);
             this.buttonCalculate.Name = "buttonCalculate";
-            this.buttonCalculate.Size = new System.Drawing.Size(151, 25);
+            this.buttonCalculate.Size = new System.Drawing.Size(201, 31);
             this.buttonCalculate.TabIndex = 13;
             this.buttonCalculate.Text = "Calculează";
             this.buttonCalculate.UseVisualStyleBackColor = true;
@@ -105,20 +116,22 @@
             // textBoxResult
             // 
             this.textBoxResult.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBoxResult.Location = new System.Drawing.Point(32, 130);
+            this.textBoxResult.Location = new System.Drawing.Point(43, 160);
+            this.textBoxResult.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxResult.Multiline = true;
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.ReadOnly = true;
             this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult.Size = new System.Drawing.Size(220, 225);
+            this.textBoxResult.Size = new System.Drawing.Size(292, 276);
             this.textBoxResult.TabIndex = 2;
             // 
             // buttonAddMeal
             // 
             this.buttonAddMeal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonAddMeal.Location = new System.Drawing.Point(76, 87);
+            this.buttonAddMeal.Location = new System.Drawing.Point(101, 107);
+            this.buttonAddMeal.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddMeal.Name = "buttonAddMeal";
-            this.buttonAddMeal.Size = new System.Drawing.Size(107, 25);
+            this.buttonAddMeal.Size = new System.Drawing.Size(143, 31);
             this.buttonAddMeal.TabIndex = 3;
             this.buttonAddMeal.Text = "Adaugă masă";
             this.buttonAddMeal.UseVisualStyleBackColor = true;
@@ -127,20 +140,22 @@
             // textBoxMealsList
             // 
             this.textBoxMealsList.Cursor = System.Windows.Forms.Cursors.Default;
-            this.textBoxMealsList.Location = new System.Drawing.Point(20, 130);
+            this.textBoxMealsList.Location = new System.Drawing.Point(27, 160);
+            this.textBoxMealsList.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMealsList.Multiline = true;
             this.textBoxMealsList.Name = "textBoxMealsList";
             this.textBoxMealsList.ReadOnly = true;
             this.textBoxMealsList.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxMealsList.Size = new System.Drawing.Size(213, 225);
+            this.textBoxMealsList.Size = new System.Drawing.Size(283, 276);
             this.textBoxMealsList.TabIndex = 4;
             // 
             // buttonShowProgress
             // 
             this.buttonShowProgress.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonShowProgress.Location = new System.Drawing.Point(25, 28);
+            this.buttonShowProgress.Location = new System.Drawing.Point(33, 11);
+            this.buttonShowProgress.Margin = new System.Windows.Forms.Padding(4);
             this.buttonShowProgress.Name = "buttonShowProgress";
-            this.buttonShowProgress.Size = new System.Drawing.Size(157, 34);
+            this.buttonShowProgress.Size = new System.Drawing.Size(209, 53);
             this.buttonShowProgress.TabIndex = 5;
             this.buttonShowProgress.Text = "Vezi progres";
             this.buttonShowProgress.UseVisualStyleBackColor = true;
@@ -154,9 +169,11 @@
             this.groupBoxAddMeal.Controls.Add(this.textBoxAddCalories);
             this.groupBoxAddMeal.Controls.Add(this.textBoxMealsList);
             this.groupBoxAddMeal.Controls.Add(this.buttonAddMeal);
-            this.groupBoxAddMeal.Location = new System.Drawing.Point(310, 25);
+            this.groupBoxAddMeal.Location = new System.Drawing.Point(413, 31);
+            this.groupBoxAddMeal.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxAddMeal.Name = "groupBoxAddMeal";
-            this.groupBoxAddMeal.Size = new System.Drawing.Size(253, 375);
+            this.groupBoxAddMeal.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxAddMeal.Size = new System.Drawing.Size(337, 462);
             this.groupBoxAddMeal.TabIndex = 6;
             this.groupBoxAddMeal.TabStop = false;
             // 
@@ -170,77 +187,88 @@
             "Prânz",
             "Cină",
             "Gustare"});
-            this.comboBoxMealType.Location = new System.Drawing.Point(92, 27);
+            this.comboBoxMealType.Location = new System.Drawing.Point(123, 33);
+            this.comboBoxMealType.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxMealType.Name = "comboBoxMealType";
-            this.comboBoxMealType.Size = new System.Drawing.Size(133, 21);
+            this.comboBoxMealType.Size = new System.Drawing.Size(176, 24);
             this.comboBoxMealType.TabIndex = 14;
             // 
             // labelMealType
             // 
             this.labelMealType.AutoSize = true;
-            this.labelMealType.Location = new System.Drawing.Point(33, 31);
+            this.labelMealType.Location = new System.Drawing.Point(44, 38);
+            this.labelMealType.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMealType.Name = "labelMealType";
-            this.labelMealType.Size = new System.Drawing.Size(53, 13);
+            this.labelMealType.Size = new System.Drawing.Size(70, 17);
             this.labelMealType.TabIndex = 13;
             this.labelMealType.Text = "Tip masă:";
             // 
             // labelCaloriesCount
             // 
             this.labelCaloriesCount.AutoSize = true;
-            this.labelCaloriesCount.Location = new System.Drawing.Point(33, 61);
+            this.labelCaloriesCount.Location = new System.Drawing.Point(44, 75);
+            this.labelCaloriesCount.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCaloriesCount.Name = "labelCaloriesCount";
-            this.labelCaloriesCount.Size = new System.Drawing.Size(96, 13);
+            this.labelCaloriesCount.Size = new System.Drawing.Size(130, 17);
             this.labelCaloriesCount.TabIndex = 12;
             this.labelCaloriesCount.Text = "Calorii ultima masă:";
             // 
             // textBoxAddCalories
             // 
-            this.textBoxAddCalories.Location = new System.Drawing.Point(135, 58);
+            this.textBoxAddCalories.Location = new System.Drawing.Point(180, 71);
+            this.textBoxAddCalories.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAddCalories.Name = "textBoxAddCalories";
-            this.textBoxAddCalories.Size = new System.Drawing.Size(90, 20);
+            this.textBoxAddCalories.Size = new System.Drawing.Size(119, 22);
             this.textBoxAddCalories.TabIndex = 12;
+            this.textBoxAddCalories.TextChanged += new System.EventHandler(this.textBoxAddCalories_TextChanged);
             // 
             // groupBoxProgress
             // 
             this.groupBoxProgress.Controls.Add(this.buttonShowProgress);
-            this.groupBoxProgress.Location = new System.Drawing.Point(580, 214);
+            this.groupBoxProgress.Location = new System.Drawing.Point(773, 263);
+            this.groupBoxProgress.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxProgress.Name = "groupBoxProgress";
-            this.groupBoxProgress.Size = new System.Drawing.Size(211, 81);
+            this.groupBoxProgress.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxProgress.Size = new System.Drawing.Size(281, 72);
             this.groupBoxProgress.TabIndex = 7;
             this.groupBoxProgress.TabStop = false;
             // 
             // labelDayCalories
             // 
             this.labelDayCalories.AutoSize = true;
-            this.labelDayCalories.Location = new System.Drawing.Point(6, 35);
+            this.labelDayCalories.Location = new System.Drawing.Point(8, 43);
+            this.labelDayCalories.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelDayCalories.Name = "labelDayCalories";
-            this.labelDayCalories.Size = new System.Drawing.Size(80, 13);
+            this.labelDayCalories.Size = new System.Drawing.Size(107, 17);
             this.labelDayCalories.TabIndex = 8;
             this.labelDayCalories.Text = "Total calorii azi:";
             // 
             // textBoxDayCalories
             // 
-            this.textBoxDayCalories.Location = new System.Drawing.Point(90, 32);
+            this.textBoxDayCalories.Location = new System.Drawing.Point(120, 39);
+            this.textBoxDayCalories.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxDayCalories.Name = "textBoxDayCalories";
             this.textBoxDayCalories.ReadOnly = true;
-            this.textBoxDayCalories.Size = new System.Drawing.Size(115, 20);
+            this.textBoxDayCalories.Size = new System.Drawing.Size(152, 22);
             this.textBoxDayCalories.TabIndex = 9;
             this.textBoxDayCalories.Text = "0";
             // 
             // textBoxCaloriesToTarget
             // 
-            this.textBoxCaloriesToTarget.Location = new System.Drawing.Point(114, 107);
+            this.textBoxCaloriesToTarget.Location = new System.Drawing.Point(152, 132);
+            this.textBoxCaloriesToTarget.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxCaloriesToTarget.Name = "textBoxCaloriesToTarget";
             this.textBoxCaloriesToTarget.ReadOnly = true;
-            this.textBoxCaloriesToTarget.Size = new System.Drawing.Size(91, 20);
+            this.textBoxCaloriesToTarget.Size = new System.Drawing.Size(120, 22);
             this.textBoxCaloriesToTarget.TabIndex = 11;
             // 
             // labelCaloriesToTarget
             // 
             this.labelCaloriesToTarget.AutoSize = true;
-            this.labelCaloriesToTarget.Location = new System.Drawing.Point(6, 110);
+            this.labelCaloriesToTarget.Location = new System.Drawing.Point(8, 135);
+            this.labelCaloriesToTarget.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelCaloriesToTarget.Name = "labelCaloriesToTarget";
-            this.labelCaloriesToTarget.Size = new System.Drawing.Size(106, 13);
+            this.labelCaloriesToTarget.Size = new System.Drawing.Size(143, 17);
             this.labelCaloriesToTarget.TabIndex = 10;
             this.labelCaloriesToTarget.Text = "Calorii până la target:";
             // 
@@ -252,38 +280,91 @@
             this.groupBoxCalorieCount.Controls.Add(this.labelCaloriesToTarget);
             this.groupBoxCalorieCount.Controls.Add(this.textBoxDayCalories);
             this.groupBoxCalorieCount.Controls.Add(this.labelDayCalories);
-            this.groupBoxCalorieCount.Location = new System.Drawing.Point(580, 25);
+            this.groupBoxCalorieCount.Location = new System.Drawing.Point(773, 31);
+            this.groupBoxCalorieCount.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxCalorieCount.Name = "groupBoxCalorieCount";
-            this.groupBoxCalorieCount.Size = new System.Drawing.Size(211, 183);
+            this.groupBoxCalorieCount.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxCalorieCount.Size = new System.Drawing.Size(281, 225);
             this.groupBoxCalorieCount.TabIndex = 12;
             this.groupBoxCalorieCount.TabStop = false;
             // 
             // textBoxTargetCalories
             // 
-            this.textBoxTargetCalories.Location = new System.Drawing.Point(53, 71);
+            this.textBoxTargetCalories.Location = new System.Drawing.Point(71, 87);
+            this.textBoxTargetCalories.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTargetCalories.Name = "textBoxTargetCalories";
-            this.textBoxTargetCalories.Size = new System.Drawing.Size(115, 20);
+            this.textBoxTargetCalories.Size = new System.Drawing.Size(152, 22);
             this.textBoxTargetCalories.TabIndex = 13;
             this.textBoxTargetCalories.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxTargetCalories_KeyUp);
             // 
             // labelTargetCalories
             // 
             this.labelTargetCalories.AutoSize = true;
-            this.labelTargetCalories.Location = new System.Drawing.Point(6, 74);
+            this.labelTargetCalories.Location = new System.Drawing.Point(8, 91);
+            this.labelTargetCalories.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTargetCalories.Name = "labelTargetCalories";
-            this.labelTargetCalories.Size = new System.Drawing.Size(41, 13);
+            this.labelTargetCalories.Size = new System.Drawing.Size(54, 17);
             this.labelTargetCalories.TabIndex = 12;
             this.labelTargetCalories.Text = "Target:";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.AddDayButon);
+            this.groupBox1.Location = new System.Drawing.Point(773, 356);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox1.Size = new System.Drawing.Size(281, 73);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            // 
+            // AddDayButon
+            // 
+            this.AddDayButon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddDayButon.Location = new System.Drawing.Point(33, 23);
+            this.AddDayButon.Margin = new System.Windows.Forms.Padding(4);
+            this.AddDayButon.Name = "AddDayButon";
+            this.AddDayButon.Size = new System.Drawing.Size(209, 42);
+            this.AddDayButon.TabIndex = 5;
+            this.AddDayButon.Text = "Adaugă zi";
+            this.AddDayButon.UseVisualStyleBackColor = true;
+            this.AddDayButon.Click += new System.EventHandler(this.AddDayButon_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Location = new System.Drawing.Point(773, 437);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox2.Size = new System.Drawing.Size(281, 64);
+            this.groupBox2.TabIndex = 14;
+            this.groupBox2.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Location = new System.Drawing.Point(33, 14);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(209, 42);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Adaugă target";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(815, 412);
+            this.ClientSize = new System.Drawing.Size(1087, 507);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBoxCalorieCount);
             this.Controls.Add(this.groupBoxProgress);
             this.Controls.Add(this.groupBoxAddMeal);
             this.Controls.Add(this.groupBoxResults);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
             this.Text = "App";
             this.groupBoxResults.ResumeLayout(false);
@@ -293,6 +374,8 @@
             this.groupBoxProgress.ResumeLayout(false);
             this.groupBoxCalorieCount.ResumeLayout(false);
             this.groupBoxCalorieCount.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -320,6 +403,10 @@
         private System.Windows.Forms.Label labelMealType;
         private System.Windows.Forms.Label labelTargetCalories;
         private System.Windows.Forms.TextBox textBoxTargetCalories;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button AddDayButon;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

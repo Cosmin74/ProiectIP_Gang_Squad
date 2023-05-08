@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 
+
 namespace BazadeDate{
     public class DB{
 
@@ -68,7 +69,7 @@ namespace BazadeDate{
 
         public int Verificare(string email, string pass){
             // Interogare SQL pentru a verifica dacă email-ul și parola sunt în baza de date
-            string interogare = "SELECT COUNT(*) FROM [User] where [Mail]='" + email + "'" + "AND [Parola]='" + pass + "'";
+            string interogare = "SELECT COUNT(*) FROM [User] where Mail='" + email + "'" + "AND Parola='" + pass + "'";
             int NumarVerificare = 0;
             //Deschiderea conexiunii la baza de date 
             try{
@@ -98,6 +99,196 @@ namespace BazadeDate{
                 MessageBox.Show("Eroare la executia : " + ex.Message);
             }
             return NumarVerificare;
+        }
+
+        public string getGender(string email, string pass)
+        {
+            MessageBox.Show(email+" "+pass);
+            string interogare = "SELECT Gen FROM [User] where Mail='" + email + "'" + "AND Parola='" + pass + "'";
+            string gen = "";
+            //Deschiderea conexiunii la baza de date 
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception ex){
+                // Se gestionează erorile care pot aparea in timpul deschiderii conexiunii.
+                MessageBox.Show("Eroare la deschidere conexiunii : " + ex.Message);
+            }
+            try
+            {
+                //Executarea interogării SQL și salvarea rezultatului
+                SqlCommand comanda = new SqlCommand(interogare, connection);
+                gen = (string)comanda.ExecuteScalar();
+                //Închiderea onexiunii la baza de date
+                try
+                {
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Se gestionează erorile care pot aparea in timpul inchiderr conexiunii.
+                    MessageBox.Show("Eroare la inchiderea conexiunii : " + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul execuției interogării.
+                MessageBox.Show("Eroare la executia : " + ex.Message);
+            }
+            return gen;
+        }
+
+        public string getActivity(string email, string pass)
+        {
+            string interogare = "SELECT NivelActivitate FROM [User] where [Mail]='" + email + "'" + "AND [Parola]='" + pass + "'";
+            string nivelActivitate = "";
+            //Deschiderea conexiunii la baza de date 
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul deschiderii conexiunii.
+                MessageBox.Show("Eroare la deschidere conexiunii : " + ex.Message);
+            }
+            try
+            {
+                //Executarea interogării SQL și salvarea rezultatului
+                SqlCommand comanda = new SqlCommand(interogare, connection);
+                nivelActivitate = comanda.ExecuteScalar().ToString();
+                //Închiderea onexiunii la baza de date
+                try
+                {
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Se gestionează erorile care pot aparea in timpul inchiderr conexiunii.
+                    MessageBox.Show("Eroare la inchiderea conexiunii : " + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul execuției interogării.
+                MessageBox.Show("Eroare la executia : " + ex.Message);
+            }
+            return nivelActivitate;
+        }
+
+        public double getWeight(string email, string pass)
+        {
+            string interogare = "SELECT Greutate FROM [User] where [Mail]='" + email + "'" + "AND [Parola]='" + pass + "'";
+            double greutate = 0;
+            //Deschiderea conexiunii la baza de date 
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul deschiderii conexiunii.
+                MessageBox.Show("Eroare la deschidere conexiunii : " + ex.Message);
+            }
+            try
+            {
+                //Executarea interogării SQL și salvarea rezultatului
+                SqlCommand comanda = new SqlCommand(interogare, connection);
+                greutate = (double)comanda.ExecuteScalar();
+                //Închiderea onexiunii la baza de date
+                try
+                {
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Se gestionează erorile care pot aparea in timpul inchiderr conexiunii.
+                    MessageBox.Show("Eroare la inchiderea conexiunii : " + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul execuției interogării.
+                MessageBox.Show("Eroare la executia : " + ex.Message);
+            }
+            return greutate;
+        }
+
+        public double getHeight(string email, string pass)
+        {
+            string interogare = "SELECT Inaltime FROM [User] where [Mail]='" + email + "'" + "AND [Parola]='" + pass + "'";
+            double inaltime = 0;
+            //Deschiderea conexiunii la baza de date 
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul deschiderii conexiunii.
+                MessageBox.Show("Eroare la deschidere conexiunii : " + ex.Message);
+            }
+            try
+            {
+                //Executarea interogării SQL și salvarea rezultatului
+                SqlCommand comanda = new SqlCommand(interogare, connection);
+                inaltime = (double)comanda.ExecuteScalar();
+                //Închiderea onexiunii la baza de date
+                try
+                {
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Se gestionează erorile care pot aparea in timpul inchiderr conexiunii.
+                    MessageBox.Show("Eroare la inchiderea conexiunii : " + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul execuției interogării.
+                MessageBox.Show("Eroare la executia : " + ex.Message);
+            }
+            return inaltime;
+        }
+
+        public int getAge(string email,string pass)
+        {
+            string interogare = "SELECT Varsta FROM [User] where [Mail]='" + email + "'" + "AND [Parola]='" + pass + "'";
+            int varsta = 0;
+            //Deschiderea conexiunii la baza de date 
+            try
+            {
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul deschiderii conexiunii.
+                MessageBox.Show("Eroare la deschidere conexiunii : " + ex.Message);
+            }
+            try
+            {
+                //Executarea interogării SQL și salvarea rezultatului
+                SqlCommand comanda = new SqlCommand(interogare, connection);
+                varsta = (int)comanda.ExecuteScalar();
+                //Închiderea onexiunii la baza de date
+                try
+                {
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    // Se gestionează erorile care pot aparea in timpul inchiderr conexiunii.
+                    MessageBox.Show("Eroare la inchiderea conexiunii : " + ex.Message);
+                }
+            }
+            catch (Exception ex)
+            {
+                // Se gestionează erorile care pot aparea in timpul execuției interogării.
+                MessageBox.Show("Eroare la executia : " + ex.Message);
+            }
+            return varsta;
         }
     }
 }

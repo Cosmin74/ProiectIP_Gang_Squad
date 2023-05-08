@@ -9,14 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using BazadeDate;
+using BazaDeDateFacade;
 
 namespace Logare{
     public partial class Inregistrare : Form{
         public Inregistrare(){
             InitializeComponent();
+            bazaDeDateFacade = new BazaDeDateFacade.BazaDeDateFacade();
         }
 
-        public BazadeDate.DB db = new BazadeDate.DB();        
+        private BazaDeDateFacade.BazaDeDateFacade bazaDeDateFacade;
+
         // Această metodă deschide fereastra de autentificare atunci când utilizatorul dorește să se întoarcă la acea pagină.
         private void button2_Click(object sender, EventArgs e){
             Form1 f1 = new Form1();
@@ -27,10 +30,10 @@ namespace Logare{
         private void button1_Click(object sender, EventArgs e){
             //Verifică dacă utilizatorul a completat toate câmpuri
             if (last_name.Text != "" && first_name.Text != "" && mail_address.Text != "" && pass.Text != "" && gen.Text != "" && activity.Text != "" && weight.Text != "" && height.Text != "" && age.Text != ""){
-                int checkNumber = db.check(mail_address.Text);
+                int checkNumber = bazaDeDateFacade.Check(mail_address.Text);
                 if (checkNumber != 1){
                     //Adaugarea informatiilor persoanle in baza de date 
-                    db.AddinTable(last_name.Text,first_name.Text, mail_address.Text, pass.Text, gen.Text, activity.Text, weight.Text,height.Text,age.Text);
+                    bazaDeDateFacade.AddInTable(last_name.Text, first_name.Text, mail_address.Text, pass.Text, gen.Text, activity.Text, weight.Text, height.Text, age.Text);
 
                     MessageBox.Show("V-ați înregistrat cu succes");
                     //Se face refresh la toate câmpurile 

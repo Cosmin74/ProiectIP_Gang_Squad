@@ -28,25 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.Clearbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // Clearbutton
             // 
-            this.button1.Location = new System.Drawing.Point(258, 133);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(273, 126);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Clearbutton.Location = new System.Drawing.Point(1070, 545);
+            this.Clearbutton.Name = "Clearbutton";
+            this.Clearbutton.Size = new System.Drawing.Size(140, 52);
+            this.Clearbutton.TabIndex = 6;
+            this.Clearbutton.Text = "Adaugă";
+            this.Clearbutton.UseVisualStyleBackColor = true;
+            this.Clearbutton.Click += new System.EventHandler(this.Clearbutton_Click);
             // 
             // ProgressForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1223, 628);
+            this.Controls.Add(this.Clearbutton);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProgressForm";
             this.Text = "ProgressForm";
             this.ResumeLayout(false);
@@ -54,7 +55,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Clearbutton;
     }
 }

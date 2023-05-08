@@ -12,3 +12,20 @@ C:\Users\edria\source\repos\IP\PROIECT\CalculatorCaloric\CalculatorCaloric\obj\D
 C:\Users\edria\source\repos\IP\PROIECT\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.ProgressForm.resources
 C:\Users\edria\source\repos\IP\PROIECT\CalculatorCaloric\CalculatorCaloric\bin\Debug\CalculatorDLL.pdb
 C:\Users\edria\source\repos\IP\PROIECT\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.csproj.CopyComplete
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.csproj.AssemblyReference.cache
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.MainForm.resources
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.ProgressForm.resources
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.Properties.Resources.resources
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.csproj.GenerateResource.cache
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.csproj.CoreCompileInputs.cache
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.exe
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.pdb
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\CalculatorCaloric.exe.config
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\CalculatorCaloric.exe
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\CalculatorCaloric.pdb
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\CalculatorDLL.pdb
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\obj\Debug\CalculatorCaloric.csproj.CopyComplete
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\BazaDeDateFacade.dll
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\BazaDeDateFacade.pdb
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\Meals.dll
+C:\Anul3_Semestrul2\IP\Proiect_de_ala_frumos\Rezerva - Copy\ProiectIP_Gangster_Paradise_Squad-main\CalculatorCaloric\CalculatorCaloric\bin\Debug\Meals.pdb
